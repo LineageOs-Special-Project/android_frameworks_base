@@ -258,4 +258,7 @@
     <!-- Rear Display Education -->
     <color name="rear_display_overlay_animation_background_color">#1E1B17</color>
     <color name="rear_display_overlay_dialog_background_color">#1E1B17</color>
+
+    <!-- Notification counter -->
+    <color name="notification_number_text_color">#ff000000</color>
 </resources>
