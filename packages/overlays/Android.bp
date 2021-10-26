@@ -22,15 +22,18 @@ package {
 phony {
     name: "frameworks-base-overlays",
     required: [
+        "AvoidAppsInCutoutOverlay",
         "DisplayCutoutEmulationCornerOverlay",
         "DisplayCutoutEmulationDoubleOverlay",
         "DisplayCutoutEmulationHoleOverlay",
         "DisplayCutoutEmulationTallOverlay",
         "DisplayCutoutEmulationWaterfallOverlay",
         "FontNotoSerifSourceOverlay",
+        "DisplayCutoutEmulationWideOverlay",
         "NavigationBarMode3ButtonOverlay",
         "NavigationBarModeGesturalOverlay",
         "TransparentNavigationBarOverlay",
+        "NoCutoutOverlay",
         "NotesRoleEnabledOverlay",
         "NotchBarKillerLeftOverlay",
         "NotchBarKillerOverlay",
