@@ -3874,4 +3874,6 @@ Action + ESC for this.</string>
     <string name="enable_fiveg">Enable 5G</string>
     <!-- Notification counter -->
     <string name="status_bar_notification_info_overflow" translatable="false">\u221E</string>
+    <!-- Statusbar Icons -->
+    <string name="status_bar_data_saver">Data saver</string>
 </resources>
