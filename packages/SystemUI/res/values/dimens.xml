@@ -2050,4 +2050,7 @@
     <!-- SliceView icon size -->
     <dimen name="abc_slice_big_pic_min_height">64dp</dimen>
     <dimen name="abc_slice_big_pic_max_height">64dp</dimen>
+
+    <!-- The height of the WiFi toggle layout in Internet panel -->
+    <dimen name="internet_dialog_wifi_toggle_height">56dp</dimen>
 </resources>
