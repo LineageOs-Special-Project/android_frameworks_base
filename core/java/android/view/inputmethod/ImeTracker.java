@@ -596,11 +596,11 @@ public interface ImeTracker {
             final var token = IInputMethodManagerGlobalInvoker.onStart(tag, uid, type,
                     origin, reason, fromUser);
 
-            Log.i(TAG, token.mTag + ": " + getOnStartPrefix(type)
-                    + " at " + Debug.originToString(origin)
-                    + " reason " + InputMethodDebug.softInputDisplayReasonToString(reason)
-                    + " fromUser " + fromUser,
-                    mLogStackTrace ? new Throwable() : null);
+            //Log.i(TAG, token.mTag + ": onRequest" + (type == TYPE_SHOW ? "Show" : "Hide")
+            //        + " at " + Debug.originToString(origin)
+            //        + " reason " + InputMethodDebug.softInputDisplayReasonToString(reason)
+            //        + " fromUser " + fromUser,
+            //        mLogStackTrace ? new Throwable() : null);
             return token;
         }
 
@@ -633,7 +633,7 @@ public interface ImeTracker {
             if (token == null) return;
             IInputMethodManagerGlobalInvoker.onCancelled(token, phase);
 
-            Log.i(TAG, token.mTag + ": onCancelled at " + Debug.phaseToString(phase));
+            //Log.i(TAG, token.mTag + ": onCancelled at " + Debug.phaseToString(phase));
         }
 
         @Override
