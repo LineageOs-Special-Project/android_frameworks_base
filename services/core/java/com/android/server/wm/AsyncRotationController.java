@@ -371,7 +371,6 @@ class AsyncRotationController extends FadeAnimationController implements Consume
     }
 
     protected void setActivityBoost(boolean enable) {
-        PowerManagerInternal mPowerManagerInternal = LocalServices.getService(PowerManagerInternal.class);
         if (mPowerManagerInternal != null) {
             mPowerManagerInternal.setPowerMode(Mode.LAUNCH, enable);
         }
