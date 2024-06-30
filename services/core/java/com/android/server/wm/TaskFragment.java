@@ -1541,8 +1541,8 @@ class TaskFragment extends WindowContainer<WindowContainer> {
                 dc.prepareAppTransition(TRANSIT_NONE);
             } else {
                 dc.prepareAppTransition(TRANSIT_OPEN);
-                if (next != null) {
-                    doActivityBoost();
+                if (mPowerManagerInternal != null) {
+                    mPowerManagerInternal.setPowerBoost(Boost.DISPLAY_UPDATE_IMMINENT, 80);
                 }
             }
         }
@@ -1690,13 +1690,6 @@ class TaskFragment extends WindowContainer<WindowContainer> {
         }
 
         return true;
-    }
-
-    protected void doActivityBoost() {
-        PowerManagerInternal mPowerManagerInternal = LocalServices.getService(PowerManagerInternal.class);
-        if (mPowerManagerInternal != null) {
-            mPowerManagerInternal.setPowerBoost(Boost.DISPLAY_UPDATE_IMMINENT, 80);
-        }
     }
 
     boolean shouldSleepOrShutDownActivities() {
